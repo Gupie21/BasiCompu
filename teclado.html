@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BasiCompu</title>
+
+	<meta name="description" content="Tutorial Teclado">
+	<meta name="BasiCompu" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body onload="init();">
+
+	<div class="container-fluid" style="display:block;">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="menu.html" id= "s" style= "color: Blue; font-size: 44px;">BasiCompu</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" style= "font-size: 33px;">
+						<li>
+                            <a href="cpu.html">Computadora <i class="fa fa-laptop" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Harware <i class="fa fa-cogs" aria-hidden="true"></i><strong class="caret"></strong></a>
+                            <ul class="dropdown-menu" style= "font-size: 33px;">
+                                <li>
+                                    <a href="mouse.html">Mouse <i class="fa fa-mouse-pointer" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">Teclado <i class="fa fa-keyboard-o" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="pantalla.html">Pantalla <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="software.html">Software <i class="fa fa-cloud" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+				</div>
+			</nav>
+			</div>
+		</div>
+		<div class="row" id="0" style="display:block;">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<h1>Teclado <i class="fa fa-keyboard-o" aria-hidden="true"></i></h1>
+				<canvas id="canvas" width="100%" height="auto" style="display: block; background-color:rgba(255, 255, 255, 0.00)"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="js/canvas/teclado/teclado.js"></script>
+    <script src="js/canvas/teclado/fteclado.js"></script>
+
+</body>
+</html>

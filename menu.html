@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BasiCompu</title>
+
+	<meta name="description" content="Menú">
+	<meta name="BasiCompu" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+		<!--Preloader (loader) START -->
+        <div id="loader-block" class="loader_overlay animated" style="display:block;">
+            <div class="loader  white">
+        		<div class='loader__text  white'>
+                    <span class=" white">Cargando...</span>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                    <div class='spinner'>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Preloader (loader) END -->
+
+	<div class="container-fluid" id="nav-container" style="display:none; padding-top: 1%;">
+        <div class= "row">\
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href="#" id= "men"  data-toogle= "tooltip" title= "Click izquierdo para volver al menú"><h1 style= "font-size: 117px; color: #D67B03;">Menú <i class="fa fa-book" aria-hidden="true"></i></h1></a>
+            </div>
+        </div>
+		<div class="row" id="Menu">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "#" id= "hard"><img src="images/botones/hardware.gif" class= "img-responsive"></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "software.html"><img src="images/botones/software.gif" class= "img-responsive"></a>    
+            </div>
+		</div>
+        <div class="row" id="Hardware" style="display:none;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="display:none;">
+                <h1>Harware <i class="fa fa-cogs" aria-hidden="true"></i></h1>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "mouse.html"><img src="images/botones/mouse.gif" class= "img-responsive"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "teclado.html"><img src="images/botones/teclado.gif" class= "img-responsive"></a>    
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "pantalla.html"><img src="images/botones/pantalla.gif" class= "img-responsive"></a>    
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center" style="display:block;">
+                <a href= "cpu.html"><img src="images/botones/cpu.gif" class= "img-responsive"></a>    
+            </div>
+        </div>
+        <div class="row"style="display:block;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="display:none;">
+                <h1>Software <i class="fa fa-cloud" aria-hidden="true"></i></h1>
+            </div>
+        </div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+    <script>
+    $('#men').click(function(){
+        $('#Hardware').css('display', 'none');
+        $('#Software').css('display', 'none');
+        $('#Menu').css('display', 'block');
+    });
+    $('#hard').click(function(){
+        $('#Hardware').css('display', 'block');
+        $('#Software').css('display', 'none');
+        $('#Menu').css('display', 'none');
+    });
+    </script>
+</body>
+</html>

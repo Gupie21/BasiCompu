@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BasiCompu</title>
+
+	<meta name="description" content="Un lugar para aprender">
+	<meta name="BasiCompu" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/intro.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>    
+	<div class="container-fluid" id="intro s0" style="display:block;">
+		<div class="row introBrand">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                <p style= "color: Blue; font-size: 53px;">BasiCompu <i class="fa fa-pencil" aria-hidden="true"></i></p>
+                <h2>Un lugar para personas que quieren aprender computación básica.</h2>
+                <h1 style= "color: Green;">Comenzar!! <i class="fa fa-check" aria-hidden="true"></i></h1>
+                <a href="cpu.html"  data-toogle= "tooltip" title= "Click izquierdo para comenzar"><img class="img-responsive" id="introImg1" style="width: 300px; height: auto;" src="images/botonOff.png"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+		</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                <a href="menu.html" data-toogle= "tooltip" title= "Click izquierdo para comenzar"><img class="img-responsive" id="introImg2" style="width: 250px; height: auto;" src="images/bl.png"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+        </div>
+	</div>
+    <footer class= "text-center">
+        <p class="text-muted credit" style= "color: Red; font-size: 17px;">®BasiCompu | Todos los derechos reservados.</p>
+    </footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script>
+     $('#introImg1').hover(function() {
+        $(this).attr('src', 'images/botonOn.png');
+    }, function() {
+        $(this).attr('src', 'images/botonOff.png');
+    });
+     $('#introImg2').hover(function() {
+        $(this).attr('src', 'images/blh.png');
+    }, function() {
+        $(this).attr('src', 'images/bl.png');
+    });
+	</script>
+</body>
+</html>
+
